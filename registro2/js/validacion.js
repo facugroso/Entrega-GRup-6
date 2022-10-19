@@ -1,14 +1,22 @@
-document.getElementById("button").addEventListener("click", function () {
-    
-    let nombre = document.getElementById("txtPassword");
-    let apellido = document.getElementById("txtPassword");
-    let email = document.getElementById("txtEmail");
-    let password = document.getElementById("txtPassword");
-    let repPass = document.getElementById("txtPassword");
 
-    if ((nombre.value === "")||(apellido.value === "")||(email.value === "")||(password.value === "")||(repPass.value === ""))
-    {
-      alert("Debe de completar campos")
-    } 
-  
-  });
+
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
