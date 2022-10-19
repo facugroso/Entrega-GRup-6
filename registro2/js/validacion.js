@@ -20,3 +20,13 @@
       }, false)
     })
 })()
+
+ const contra1 = document.getElementById("validationCustom05")
+ const contra2 = document.getElementById("validationCustom03")
+const boton = document.getElementById("button")
+function validarcontra(){
+  if (contra1==contra2){
+   boton
+  }
+
+}

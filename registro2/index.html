@@ -38,35 +38,68 @@
             <div class="col-sm-6">
                <label for="validationDefault01" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="validationDefault01" value="" required>
+              <div class="valid-feedback">
+                Dato correcto
+              </div>
+              <div class="invalid-feedback">
+                Ingrese Nombre.
+              </div>
             </div>
 
             <div class="col-sm-6">
               <label for="validationDefault02" class="form-label">Apellido</label>
               <input type="text" class="form-control" id="validationDefault02" value="" required>
+              <div class="valid-feedback">
+                Dato correcto
+              </div>
+              <div class="invalid-feedback">
+                Ingrese Apellido.
+              </div>
             </div>
 
             <div class="col-12">
               <label for="validationDefaultUsername" class="form-label">Email</label>
               <input type="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+              <div class="valid-feedback">
+                Dato correcto
+              </div>
+              <div class="invalid-feedback">
+                Ingrese Email correcto.
+              </div>
             </div>
 
             <div class="col-sm-6">
-              <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1">
+              <label for="validationCustom05" class="form-label">Contraseña</label>
+              <input type="password"  class="form-control" name="contra" id="validationCustom05" required>
+              <div class="valid-feedback">
+                Dato correcto
+              </div>
+              <div class="invalid-feedback">
+                Ingrese contraseña.
+              </div> 
             </div>
 
             <div class="col-sm-6">
-              <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2">
+              <label for="validationCustom03" class="form-label">Repetir contraseña</label>
+              <input type="password" class="form-control" id="validationCustom03" required>
+              <div class="valid-feedback">
+                Dato correcto
+              </div>
+              <div class="invalid-feedback">
+                Contraseña no coincide
+              </div>
             </div>
 
             <div class="col-sm-12">
               <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
                 data-bs-target="#modalTerminos">Términos del servicio</button>
-            </div>
+                <div class="valid-feedback">
+                  Dato correcto
+                </div>
+              </div>
 
-
-            <button class="btn btn-primary" type="submit" id="button">Registrarme</button>
+             
+            <button class="btn btn-primary" type="submit" id="button" disabled>Registrarme</button>
 
 
           </div>
