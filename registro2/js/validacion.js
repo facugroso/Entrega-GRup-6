@@ -13,7 +13,7 @@
          
             event.preventDefault()
             event.stopPropagation()
-
+            checked()
           }
          
       form.classList.add('was-validated')
@@ -52,7 +52,33 @@ function elemento() {
 
   elemento = document.getElementById("terminos");
   if (!elemento.checked) {
-    return false;
+   
+    let error=""
+     error+=`
+     <p> Aceptar terminos</p>
+     `
+
+     document.getElementById("errorterminos").innerHTML=error 
+     return false;
   }
 
+}
+document.getElementById("invalidCheck").addEventListener("input",checked);
+
+function checked(){
+  console.log(document.getElementById("invalidCheck").checked)
+
+  if (!elemento.checked) {
+   
+    let error=""
+     error+=`
+     <p> Aceptar terminos</p>
+     `
+
+     document.getElementById("errorterminos").innerHTML=error 
+  }
+  else{
+    let error=""
+    document.getElementById("errorterminos").innerHTML=error 
+  }
 }
