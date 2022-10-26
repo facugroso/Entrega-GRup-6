@@ -9,15 +9,13 @@
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
 
-        if (!form.checkValidity() || validarcontra()  ) {
+        if (!form.checkValidity() || validarcontra()) {
          
             event.preventDefault()
             event.stopPropagation()
 
           }
-        
-          
-     
+         
       form.classList.add('was-validated')
     
       }, false)
@@ -28,8 +26,11 @@ const contra1 = document.getElementById("validationCustom05");
 const contra2 = document.getElementById("validationCustom03");
 
 
-function validarcontra() {
 
+contra2.addEventListener("input",validarcontra);
+
+function validarcontra() {
+ 
   if (contra1.value === contra2.value) {
     contra2.classList.add("is-valid");
     console.log("hola");
@@ -37,8 +38,6 @@ function validarcontra() {
     contra2.setCustomValidity("");
     return false;
   }
-
-
   else {
     contra2.classList.add("is-invalid");
     console.log("chau");
