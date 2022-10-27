@@ -52,7 +52,7 @@ function checked() {
   if (!elemento.checked) {
     let error = "";
     error += `
-     <p class="rojo"> Aceptar terminos</p>
+     <p> Aceptar terminos</p>
      `;
 
     document.getElementById("errorterminos").innerHTML = error;

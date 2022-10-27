@@ -3,5 +3,11 @@
 }
 .rojo{
   color: red;
-  float: right;
+  text-align: center;
+  margin: 0px 5px;
+}
+
+.clase1{
+  display: flex;
+  
 }
