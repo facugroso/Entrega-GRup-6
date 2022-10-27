@@ -43,6 +43,7 @@ function validarcontra() {
 }
 
 document.getElementById("invalidCheck").addEventListener("click",checked);
+const boton= document.getElementById("boton")
 
 function checked() {
   elemento = document.getElementById("invalidCheck");
@@ -56,11 +57,14 @@ function checked() {
      `;
 
     document.getElementById("errorterminos").innerHTML = error;
+    boton.classList.add("my-panel-styles");
+    boton.classList.add("text-danger")
   } else {
     let error = "";
     error += `
     <p></p>
      `;
     document.getElementById("errorterminos").innerHTML = error;
-  }
+    boton.classList.remove("my-panel-styles");
+    boton.classList.remove("text-danger")  }
 }

@@ -3,12 +3,15 @@
 }
 .rojo{
   color: red;
-  text-align: center;
-  margin: 10px 5px;
-  
+
 }
 
 .clase1{
   display: flex;
   
 }
+.aligment{
+  text-align: center;
+  margin: 10px 5px;
+}
+ 
